@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="travel.css">
   </head>
   <body>
@@ -12,19 +13,26 @@
       <div class="container">
         <nav>
           <ul>
-            <li><a href="#">Food</a></li>
+            <li><a class='active' href="#">Food</a></li>
             <li><a href="#">People</a></li>
             <li><a href="#">People</a></li>
             <li><a href="#">Places</a></li>
             <li><a href="#">About Me</a></li>
+            <li style="float:right">
+              <div class='search-container'>
+                <form>
+                  <input type='text' placeholder="Search...." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button></button>
+                </form>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- <footer>
-      <div class="container">
-
-      </div>
-    </footer> -->
+    
+    <div class="footer">
+      <p>Footer</p>
+    </div>
   </body>
 </html >
