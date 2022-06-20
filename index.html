@@ -8,20 +8,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="travel.css">
   </head>
-  <body>
+  <sec>
     <div class="topnav">
       <ul>
-        <li><a href="#">Food</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Places</a></li>
-        <li><a href="#">About Me</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="./pages/places.html">Places</a> </li>
+        <li><a href="./pages/blog.html">Blog</a></li></li>
+        <li><a href="./pages/aboutme.html">About</a></li></li>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">Places
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Nepal</a>
+            <a href="#">Germany</a>
+            <a href="#">India</a>
+          </div>
+        </div> 
         <li style="float:right">
           <div class='search-container'>
             <form>
               <input type='text' placeholder="Search...." name="search">
               <button type="submit"><i class="fa fa-search"></i></button></button>
             </form>
+          </div>
+        </li>
+        <li>
+          <div class="social">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
           </div>
         </li>
       </ul>
@@ -32,35 +49,68 @@
       <p>These are the some places to visit.</p>
     </div>
     
-
-    <div class="row">
-      <div class="column">
-        <img src="./assets/images/berlin.jpg" style="width:100%">
-        <img src="./assets/images/brandenburg.jpg" style="width:100%">
-        <img src="./assets/images/bridge.jpg" style="width:100%">
+    <section>
+      <div class="row">
+        <div class="column">
+          <img src="./assets/images/berlin.jpg" style="width:100%">
+          <img src="./assets/images/brandenburg.jpg" style="width:100%">
+          <img src="./assets/images/bridge.jpg" style="width:100%">
+          
+        </div>
+        <div class="column">
+          <img src="./assets/images/castle.jpg" style="width:100%">
+          <img src="./assets/images/e.jpg" style="width:100%">
+          <img src="./assets/images/castle2.jpg" style="width:100%">
         
+        </div>
+        <div class="column">
+          <img src="./assets/images/roman.jpg" style="width:100%">
+          <img src="./assets/images/snow.jpg" style="width:100%">
+          <img src="./assets/images/e.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="./assets/images/berlin.jpg" style="width:100%">
+          <img src="./assets/images/volke.jpg" style="width:100%">
+          <img src="./assets/images/ham.jpg" style="width:100%">
+        </div>
       </div>
-      <div class="column">
-        <img src="./assets/images/castle.jpg" style="width:100%">
-        <img src="./assets/images/e.jpg" style="width:100%">
-        <img src="./assets/images/castle2.jpg" style="width:100%">
-       
-      </div>
-      <div class="column">
-        <img src="./assets/images/roman.jpg" style="width:100%">
-        <img src="./assets/images/snow.jpg" style="width:100%">
-        <img src="./assets/images/e.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="./assets/images/berlin.jpg" style="width:100%">
-        <img src="./assets/images/volke.jpg" style="width:100%">
-        <img src="./assets/images/ham.jpg" style="width:100%">
-      </div>
-    </div>
+    </section>
 
+    <script>
+      function myFunction() {
+        doccument.getElementById("myDropdown").classList.toggle("show");
+      }
 
+      window.onclick = function(e) {
+        if(!e.target.matches('.dropbtn')){
+          let myDropdown = doccument.getElementById("myDropdown");
+          if(myDropdown.classList.contains('show')){
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+    </script>
     <div class="footer">
-      <p>Footer</p>
+      
+        <div class="row">
+          <div class="column">
+           <h6>Travel Blog</h4>
+           <p class="p-footer">Travelling may mean many things for many people. If we open up dictionaries, they give many meanings of travelling. Someone may be on a trip or journey.  
+            Light also travels from one object to another. Again, in some games like basketball, breaking a certain rule may mean travelling. </p>
+          </div>
+
+          <div class="column">
+            <h6>Contact</h6>
+            <p>+49 123456456</p>
+          </div>
+
+          <div class="column">
+            <h6>NewsLetter</h6>
+            <input type="text" placeholder="email">
+            <i class="fa fa-envelope" style="color:white"></i>
+          </div>
+        </div>
+     
     </div>
   </body>
 </html >
