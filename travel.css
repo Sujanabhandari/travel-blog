@@ -85,6 +85,27 @@ li a:hover{
     width: 100%;
 }
 
+.header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
 
+
+/* for responsive layout- makes a two columns-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }    
+}
 
 
