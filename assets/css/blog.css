@@ -16,30 +16,31 @@ body {
 }
 
 .img-container {
-    height: 500px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
 .image {
     width: 100%;
     height: auto;
-    /* height: 500px; */
+    height: 250px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.grid-container {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+  }
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);  
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
 
 
 
