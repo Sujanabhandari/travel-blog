@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial;
+    /* padding: 30px; */
+    background: #f1f1f1;
+}
+.header {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white; 
+}
+
+.img-container {
+    height: 500px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    /* height: 500px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content:center ;
+   
+    If we want to give the specigice header area
+
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content"
+    
+    grid-auto-rows: 150px;
+    grid-template-rows:200px ;
+} */
+/* 
+.grid-item-1 {
+    grid-column: 1 ;
+    align-self: start;
+    justify-self: center;
+
+}
+
+.grid-item-2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-row: span 3;
+
+}
+
+.grid-item-3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+} */
+

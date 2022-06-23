@@ -3,17 +3,52 @@
 } */
 /* * {box-sizing: border-box;} */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
+
 body {
     margin: 0;
+    
 }
 
+/* Use of flex 
+
+*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* sets the items vertically and horizontally center */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
+
+li {
+    margin: 0.5em;
+    padding: 0.5em;
+
+}
+/* We can set the order and determine in which order it should be .  */
+
+
+/* .flex1 { */
+    /* flex-basis: 1 1 2em(growth and strech , size); it is used to increase the dimnesion */
+    /* flex-basis: 10em;  flex shrink 1x and strech 2x*/
+    /* flex: 1 2 2em; */
+
+/* } */
+/* .flex2 {
+    order: 2;
+} */
 
 .topnav {
     overflow: hidden;    
@@ -25,12 +60,12 @@ ul {
 
 
 .topnav li a {
-    display: block;
-    padding: 8px;
-    float: left;
+    /* display: block; */
+    /* padding: 8px; */
+    /* float: left; */
     color: black;
-    text-align: center;
-    padding: 14px 16px;  
+    /* text-align: center; */
+    /* padding: 14px 16px;   */
     text-decoration: none;
     font-size: 17px;
 
@@ -41,21 +76,22 @@ li a:hover{
     color: black;
 }
 
-.topnav .search-container {
-    float: right;
-}
+/* .topnav .search-container {
+    display: flex;
+} */
+
+
 
 .topnav input {
     padding: 6px;
-    margin-top: 14px;
+    /* margin-top: 14px; */
     font-size: 17px;
     border: none;
 }
 
 .topnav .search-container button {
-    float: right;
     padding: 6px ;
-    margin-top: 14px;
+    /* margin-top: 14px; */
     background: #ddd;
     font-size: 17px;
     border: none;
@@ -75,19 +111,26 @@ li a:hover{
 
 .column {
     flex: 25%;
+    /* justify-content: space-evenly; */
     padding: 0 4 px;
 }
-.column img {
+/* .column img {
     margin-top: 8px; 
     vertical-align: middle;
     width: 100%;
+} */
+
+.column-img {
+    max-height: 200px;
+    margin: 0 10px;
+    overflow: hidden;
 }
 
-.header {
+/* .header {
     text-align: center;
-    padding: 20px;
-    margin-top: 60px;
-}
+    height: auto;
+    width: 100%;
+} */
 
 .footer {  
     width: 100%;
@@ -135,61 +178,62 @@ input {
     }    
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 17px;
+.dropbtn {
+    /* color: black; */
+    padding: 16px;
+    font-size: 16px;
     border: none;
-    color: black;
-    padding: 14px 16px;
-    margin:0;
-    outline: none;
-    text-decoration: none;
     cursor: pointer;
-    
-}
 
-.dropdown-content {
-   /* display: none; */
-   position: absolute;
-   z-index: 1;
-   background-color: black;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-   min-width: 160px;
-}
-
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
   }
   
-/* .dropdown:hover .dropdown-content {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* min-width: 100px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
     display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* .dropdown:hover .dropbtn {
     
   } */
 
-.dropdown:hover .dropbtn {
-    background: #ccc;}
-
-.show {
-    display: block;
-    width: 30px;
+.social {  
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.social {
-    float: right;
-    padding: 10px;
+.social a {
+    color: white;
+}
+
+img {
+    width: 100%;
+    height:auto;
+    /* height:300px */
 }

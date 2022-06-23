@@ -1,0 +1,141 @@
+
+.main-grid{
+    align-items: center;
+    /* width: 100%; */
+    max-width: 70%;
+    min-height: 100vh;
+    margin: 10px auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+/* .grid-container {
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100%;
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    margin: 15% 0;
+}
+
+.card {
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+
+}
+.card-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+   
+}
+.card_body {
+    padding: 26px 20px 36px 20px;
+}
+
+.card_title {
+    font-weight: 700;
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.card_body p {
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+p.card_author {
+    font-size: 15px;
+    padding-top: 15px;
+
+}
+
+p.card_author a {
+    color: #1B1C34;
+    font-style: italic;
+}
+
+p.card_author a:hover {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1441px) and (min-width: 1025px) {
+    grid-container {
+        max-width: 80%;
+    }
+
+    .grid {
+        gap: 2%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card_body {
+        padding: 20px;
+    }
+
+    .card_title {
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+
+    .card_body p {
+        font-size: 16px;
+    }
+
+    a.read_more {
+        padding: 19px 0;
+        width: 60%;
+        font-size: 11px;
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .card {
+        padding: 20px 10px;
+    }
+
+    .card_body {
+        padding: 7px;
+    }
+
+    .card_title {
+        font-size: 20px;
+        padding-bottom: 7px;
+    }
+
+    .card_body p {
+        font-size: 14px;
+    }
+
+    a.read_more {
+        padding: 15px 0;
+        margin-top: 20px;
+    }
+
+}
